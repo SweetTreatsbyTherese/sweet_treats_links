@@ -242,3 +242,11 @@ body {
         color: #4a4a4a !important;
     }
 }
+/* Fix for invisible bottom icons (Phone & Email) */
+.icon-button, .icon-button i {
+    color: #b57a8a !important; /* Forces them to be Dusty Rose */
+}
+
+.icon-button:hover, .icon-button:hover i {
+    color: #9c6675 !important; /* Slightly darker when tapped/hovered */
+}
