@@ -171,3 +171,57 @@ a {
     color: #8b949e;
   }
 }
+/* --- SWEET TREATS BRANDING OVERRIDES --- */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+  --background-color: #fdfafb !important; /* Soft Off-White/Pink */
+  --text-color: #4a4a4a !important;
+  --link-background-color: #ffffff !important;
+  --link-text-color: #5c6b5d !important; /* Sage Green */
+  --link-hover-background-color: #f2e4e8 !important; /* Baby Pink Hover */
+  --link-hover-text-color: #b57a8a !important; /* Dusty Rose Hover */
+  --icon-color: #b57a8a !important; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Make the name elegant and cursive */
+.profile-name {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 3.5rem !important;
+    color: #b57a8a !important;
+    margin-bottom: 5px !important;
+}
+
+/* Style the avatar frame */
+.profile-avatar {
+    border: 4px solid #e8d0d8 !important;
+    box-shadow: 0 8px 16px rgba(181, 122, 138, 0.2) !important;
+}
+
+/* Style the buttons */
+.link-item {
+    border: 1px solid #e8d0d8 !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Make the first button (Inquiry Form) stand out */
+.links-container .link-item:first-child {
+    background-color: #b57a8a !important;
+    color: #ffffff !important;
+}
+
+.links-container .link-item:first-child .link-text,
+.links-container .link-item:first-child i {
+    color: #ffffff !important;
+}
+
+.links-container .link-item:first-child:hover {
+    background-color: #9c6675 !important;
+}
