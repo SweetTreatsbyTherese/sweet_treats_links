@@ -204,6 +204,7 @@ body {
     font-weight: 600 !important;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important;
     transition: all 0.3s ease !important;
+    justify-content: center !important; /* This centers the text and icon! */
 }
 
 .link-button:hover {
