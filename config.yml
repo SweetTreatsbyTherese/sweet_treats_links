@@ -1,39 +1,17 @@
 # Site Configuration
-
-# Theme, mapped to the directory: ./theme/xxxx
 theme: default
-
-# HTML Language setting
 lang: "en"
-
-# Plugins, implemented in ./plugins/PLUGIN_NAME
 plugins: []
-
-# Google Analytics tracking id
 google_analytics_id:
 
-# HTML Title
 title: "Sweet Treats by Therese"
-
-# Avatar image path (Must match exactly what you uploaded)
-avatar: "./AIEnhancer_Gemini_Generated_Image_hk6lqih (1).png"
-
-# Name section text
+# Pointing to the newly renamed logo!
+avatar: "./logo.png"
 name: "Sweet Treats by Therese"
-
-# Tagline section text
 tagline: >-
-    Custom Baking & Elegant Desserts<br>Email: akkyou29@gmail.com | Phone: (484) 951-5364
+  Custom Baking & Elegant Desserts<br>Email: akkyou29@gmail.com | Phone: (484) 951-5364
 
-# List of links (The main buttons)
 links:
-  - link:
-      icon: "fa-solid fa-cake-candles"
-      text: "Submit a Custom Order Inquiry"
-      url: "form.html"
-      alt: "Custom Order Form"
-      title: "Order Inquiry"
-      target: "_self"
   - link:
       icon: "fa-brands fa-instagram"
       text: "Follow on Instagram (@streats.29)"
@@ -63,7 +41,6 @@ links:
       title: "Venmo"
       target: "_blank"
 
-# List of social media links (The small icons usually at the bottom)
 socials:
   - social:
       icon: "fa-brands fa-instagram"
@@ -84,10 +61,7 @@ socials:
       alt: "Email"
       target: "_blank"
 
-# Footer text
 footer: >
-    Specializing in custom cakes, cupcakes, and elegant treats for your special moments.
-
-# Footer copyright message
+  Specializing in custom cakes, cupcakes, and elegant treats for your special moments.
 copyright: >
   © 2026 Sweet Treats by Therese. All rights reserved.
