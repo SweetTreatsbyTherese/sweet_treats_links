@@ -6,7 +6,7 @@ google_analytics_id:
 
 title: "Sweet Treats by Therese"
 # Pointing to the newly renamed logo!
-avatar: "./logo.png"
+avatar: "logo.png"
 name: "Sweet Treats by Therese"
 tagline: >-
   Custom Baking & Elegant Desserts<br>Email: akkyou29@gmail.com | Phone: (484) 951-5364
