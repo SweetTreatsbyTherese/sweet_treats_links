@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Order Inquiry - Sweet Treats by Therese</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fdfafb;
+            color: #4a4a4a;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(181, 122, 138, 0.1);
+            max-width: 500px;
+            width: 100%;
+            border-top: 6px solid #b57a8a;
+        }
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            color: #b57a8a;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 0;
+        }
+        label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            display: block;
+            color: #5c6b5d;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #e8d0d8;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            background-color: #b57a8a;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #9c6675;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #a0a0a0;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Custom Order Inquiry</h2>
+        <p style="text-align: center; font-size: 0.9rem;">Fill out the details below, and I will get back to you with a quote!</p>
+        
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_LINK" method="POST">
+            
+            <label>Your Name</label>
+            <input type="text" name="Name" required>
+
+            <label>Phone Number</label>
+            <input type="tel" name="Phone" required>
+
+            <label>Email Address</label>
+            <input type="email" name="Email" required>
+
+            <label>Date of Event</label>
+            <input type="date" name="Event Date" required>
+
+            <label>Type of Event (Birthday, Wedding, etc.)</label>
+            <input type="text" name="Event Type" required>
+
+            <label>Estimated Guest Count</label>
+            <input type="number" name="Guest Count" required>
+
+            <label>What are you looking for?</label>
+            <select name="Treat Type">
+                <option value="Cake">Custom Cake</option>
+                <option value="Cupcakes">Cupcakes</option>
+                <option value="Cookies">Custom Cookies</option>
+                <option value="Mix">A Mix of Treats</option>
+            </select>
+
+            <label>Theme, Colors, & Flavor Requests</label>
+            <textarea name="Details" rows="4" required></textarea>
+
+            <label>Estimated Budget</label>
+            <input type="text" name="Budget" placeholder="$">
+
+            <button type="submit">Submit Inquiry</button>
+        </form>
+        <a href="index.html" class="back-link">← Back to Links</a>
+    </div>
+
+</body>
+</html>
