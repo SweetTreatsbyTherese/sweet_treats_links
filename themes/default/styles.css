@@ -181,12 +181,23 @@ body {
     color: #4a4a4a !important;
 }
 
-/* Make the name elegant and cursive */
+/* Shrink the massive title to look more elegant */
 .name {
     font-family: 'Dancing Script', cursive !important;
-    font-size: 3.5rem !important;
+    font-size: 2.6rem !important; /* Shrunk down from 3.5rem */
     color: #b57a8a !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.2 !important;
+}
+
+/* Make the subheading less boring and more stylized */
+.description {
+    font-size: 1.05rem !important;
+    color: #5c6b5d !important; /* Changed to the Sage Green for contrast */
+    font-weight: 400 !important;
+    line-height: 1.8 !important; /* Gives the text more room to breathe */
+    letter-spacing: 0.5px !important; /* Makes it look slightly more premium */
+    margin-bottom: 30px !important;
 }
 
 /* Style the avatar frame */
@@ -195,7 +206,7 @@ body {
     box-shadow: 0 8px 16px rgba(181, 122, 138, 0.2) !important;
 }
 
-/* Style the buttons */
+/* Style the buttons and FORCE center alignment */
 .link-button {
     background-color: #ffffff !important;
     color: #5c6b5d !important; /* Sage Green text */
@@ -204,7 +215,10 @@ body {
     font-weight: 600 !important;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important;
     transition: all 0.3s ease !important;
-    justify-content: center !important; /* This centers the text and icon! */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
 }
 
 .link-button:hover {
