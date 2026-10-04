@@ -1,0 +1,252 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Light mode (default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  cursor: default;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.link-button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.icon-button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  background: none;
+  color: black;
+}
+
+.icon-button i {
+  font-size: 24px;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+  color: #666;
+}
+
+.icon-button:active {
+  transform: scale(0.95);
+}
+
+.link-button-text {
+  font-size: 14px;
+  color: #777;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0d1117;
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  .profile-pic {
+    border-color: white;
+  }
+
+  .description {
+    color: #c9d1d9;
+  }
+
+  .link-button {
+    background-color: #21262d;
+    color: white;
+  }
+
+  .link-button:hover {
+    background-color: #30363d;
+  }
+
+  .icon-button {
+    color: white;
+  }
+
+  .footer {
+    color: #8b949e;
+  }
+
+  .link-button-text {
+    color: #8b949e;
+  }
+}
+
+/* --- SWEET TREATS BRANDING OVERRIDES (CORRECTED) --- */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    background-color: #fdfafb !important; /* Soft Off-White/Pink */
+    font-family: 'Montserrat', sans-serif !important;
+    color: #4a4a4a !important;
+}
+
+/* Shrink the massive title to look more elegant */
+.name {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 2.6rem !important; /* Shrunk down from 3.5rem */
+    color: #b57a8a !important;
+    margin-bottom: 15px !important;
+    line-height: 1.2 !important;
+}
+
+/* Make the subheading less boring and more stylized */
+.description {
+    font-size: 1.05rem !important;
+    color: #5c6b5d !important; /* Changed to the Sage Green for contrast */
+    font-weight: 400 !important;
+    line-height: 1.8 !important; /* Gives the text more room to breathe */
+    letter-spacing: 0.5px !important; /* Makes it look slightly more premium */
+    margin-bottom: 30px !important;
+}
+
+/* Style the avatar frame */
+.profile-pic {
+    border: 4px solid #e8d0d8 !important;
+    box-shadow: 0 8px 16px rgba(181, 122, 138, 0.2) !important;
+}
+
+/* Style the buttons and FORCE center alignment */
+.link-button {
+    background-color: #ffffff !important;
+    color: #5c6b5d !important; /* Sage Green text */
+    border: 1px solid #e8d0d8 !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.link-button:hover {
+    background-color: #f2e4e8 !important; /* Baby Pink Hover */
+    color: #b57a8a !important; /* Dusty Rose Hover */
+    transform: scale(1.05) !important;
+}
+
+/* Make the icons in the buttons match */
+.link-button i {
+    color: #b57a8a !important;
+}
+
+/* Override Dark Mode so it stays pretty and pink */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #fdfafb !important;
+        color: #4a4a4a !important;
+    }
+    .description, .footer {
+        color: #4a4a4a !important;
+    }
+}
+/* Fix for invisible bottom icons (Phone & Email) */
+.icon-button, .icon-button i {
+    color: #b57a8a !important; /* Forces them to be Dusty Rose */
+}
+
+.icon-button:hover, .icon-button:hover i {
+    color: #9c6675 !important; /* Slightly darker when tapped/hovered */
+}
